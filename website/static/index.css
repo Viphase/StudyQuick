@@ -1,0 +1,54 @@
+body {
+    background-color: rgb(162, 181, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    margin: 0;
+    font-family: "Rubik", sans-serif;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 70vh;
+    width: 90%;
+}
+
+a {
+    display: inline-block;
+    padding: 15px 30px;
+    margin: 10px;
+    border-radius: 45px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 800%;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    width: 80%;
+    height: 100%;
+    text-align: center;
+}
+
+.math-btn {
+    background-color: #627bec;
+}
+
+.rus-btn {
+    background-color: #4a61c7;
+}
+
+.eng-btn {
+    background-color: #2b3d8e;
+}
+
+.oth-btn {
+    background-color: #1b2865;
+}
+
+a:active {
+    opacity: 0.8;
+}
