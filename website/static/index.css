@@ -1,36 +1,46 @@
-body {
-    background-color: rgb(162, 181, 255);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    flex-direction: column;
-    margin: 0;
-    font-family: "Rubik", sans-serif;
-}
-
 main {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    height: 70vh;
-    width: 90%;
+    width: 100%;
+    max-width: 100%;
+    padding: 1rem;
+    gap: 0.8rem;
 }
 
 a {
-    display: inline-block;
-    padding: 15px 30px;
-    margin: 10px;
     border-radius: 45px;
     color: white;
-    text-align: center;
     text-decoration: none;
-    font-size: 800%;
-    font-weight: bold;
-    transition: background-color 0.3s;
-    width: 80%;
-    height: 100%;
+    width: 90%;
+    padding: 1.5rem 1.5rem;
+    font-size: 1.4rem;
+    font-weight: 500;
     text-align: center;
+    transition: all 0.2s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 4rem;
+}
+
+/* Mobile-specific styles */
+@media (max-width: 768px) {
+    a {
+        width: 90%;
+        padding: 1.2rem 1rem;
+        font-size: 1.2rem;
+    }
+}
+
+/* Small phones */
+@media (max-width: 375px) {
+    a {
+        width: 95%;
+        padding: 1rem 0.8rem;
+        font-size: 1.1rem;
+    }
 }
 
 .math-btn {
@@ -51,4 +61,5 @@ a {
 
 a:active {
     opacity: 0.8;
+    transform: scale(0.95);
 }
