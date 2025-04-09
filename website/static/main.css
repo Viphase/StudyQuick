@@ -1,0 +1,24 @@
+body {
+    background-color: rgb(162, 181, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    margin: 0;
+    font-family: "Rubik", sans-serif;
+    padding: 0 1rem;
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 0;
+    margin-bottom: 1rem;
+} */
