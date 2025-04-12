@@ -32,7 +32,7 @@ router = Router()
 @router.message(CommandStart())
 async def command_start_handler(message: Message) -> None:
 
-    await message.answer(f"Hello, {message.from_user.full_name}!")
+    await message.answer(f"Hello, {message.from_user.full_name}!\nHere is a link to StudyQuick service. Click here and start studing!")
 
 
 @router.message()
