@@ -1,4 +1,4 @@
-body {
+/* body {
     background-color: rgb(162, 181, 255);
     display: flex;
     justify-content: center;
@@ -15,7 +15,7 @@ body {
     box-sizing: border-box;
 }
 
-/* header {
+header {
     width: 100%;
     display: flex;
     justify-content: space-between;

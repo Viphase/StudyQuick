@@ -1,13 +1,20 @@
-from flask import Flask, request
-import requests
-import os
-from dotenv import load_dotenv
-
-load_dotenv()
-TOKEN = os.getenv("TOKEN")
-URL = os.getenv("URL")
+from flask import Flask, render_template
 
 app = Flask(__name__)
 
+@app.route("/")
+def hello_world():
+    return render_template("index.html")
+
+@app.route("/create_new")
+def create_new():
+    return render_template("create.html")
+
+@app.route("/profile")
+def open_profile():
+    return render_template("profile.html")
+
+
+
 if __name__ == '__main__':
-    app.run()
+    app.run(host="0.0.0.0", port=8080)
